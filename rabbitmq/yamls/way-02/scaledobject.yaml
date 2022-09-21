@@ -19,6 +19,4 @@ spec:
       queueName: rabbitq
       value: "5"
       mode: QueueLength
-    authenticationRef:
-        # reference to TriggerAuthentication
-        name: rabbitmq-auth
+      hostFromEnv: keda-secret

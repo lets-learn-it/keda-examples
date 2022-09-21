@@ -20,4 +20,10 @@ spec:
             cpu: "100m"
         ports:
         - containerPort: 8080
+        env:
+          - name: keda-secret
+            valueFrom: 
+              secretKeyRef:
+                name: namespace-secret
+                key: host
         
